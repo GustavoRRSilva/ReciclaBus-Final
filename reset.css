@@ -2,3 +2,7 @@ button{
     background-color: unset;
     border: unset;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
