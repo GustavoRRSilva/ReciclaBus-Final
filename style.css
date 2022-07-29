@@ -4,7 +4,7 @@ body{
     width: 100vw;
     background:url(assets/Frame\ 1.svg);
     font-family: 'Kanit', sans-serif;
-
+    overflow-x: hidden;
 }
 .logo{
     width: 100%;
@@ -55,4 +55,31 @@ header{
 }
 .img-localizacao{
     width: 2.5vh;
+}
+main{
+    padding-top: 7vw;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.mockup-iphone{
+    width:50%;
+    align-self: center;
+}
+.lixeira{
+    width:56%;
+}
+@media screen and (min-width:1440px) {
+    .mockup-iphone{
+        width:10%;
+        align-self: center;
+    }
+}
+@media screen and (min-width:412px) {
+    body{
+        width: 101vw;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 }
