@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(#39A366,#87E8AD);
+}
+.logo{
+    width: 100%;
+}
+header{
+    margin: 0;
+    height: 13vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 0;
+}
+.menu-lateral{
+  display: flex;
+    position: absolute;
+    transition: 1s;
+    width: 63vw;
+    height:50vh;
+    background-color: #6DD196;
+    border-radius: 10px;
+    transition: 0.50s;
+    left: -100vh;
+   flex-direction: column;
+   z-index: 1;
+}
+.menu-lateral-ativo{
+    transition: 0.50s;
+    left: 0;
+    position: relative;
+    top: -7ch;
+}
+.logo-menu{
+   width: 192px;
+   height: 114px;
+   align-self: center;
+}
