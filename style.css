@@ -2,7 +2,7 @@ body{
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background:linear-gradient(#39A366,#87E8AD);
+    background:url(assets/Frame\ 1.svg);
     font-family: 'Kanit', sans-serif;
 
 }
