@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background:url(assets/Frame\ 1.svg);
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+}
+.logo{
+    width: 100%;
+}
+header{
+    margin: 0;
+    height: 13vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.menu-lateral{
+  display: flex;
+  position: absolute;
+    transition: 1s;
+    width: 100vw;
+    height:35vh;
+    background-color: #6DD196;
+    border-radius: 10px;
+    transition: 0.50s;
+    top: -100vh;
+   flex-direction: column;
+   font-size: 2.5vh;
+   row-gap: 10px;
+   text-align: center;
+}
+.menu-lateral-ativo{
+    font-weight: bold;
+    transition: 0.50s;
+    top: 0vh;
+}
+ .Sair-menu{
+    width: 3vh;
+    align-self: flex-end;
+}
+.Logo-nav{
+    width: 37vw;
+    align-self: center;
+}
