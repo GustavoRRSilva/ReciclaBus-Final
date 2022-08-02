@@ -71,3 +71,35 @@ header{
 .img-localizacao{
     width: 2.5vh;
 }
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7vw;
+    margin-top: 4vh;
+}
+.Pessoas{
+    display: flex;
+    
+    color: #FFFFFF;
+}
+.h2-conteudo{
+    text-align: center;
+}
+.ulconteudo{
+    display: inline;
+}
+.img-conteudo{
+    width: 24vw;
+}
+.ulconteudo{
+   margin-left: 10px;
+    font-size:15px;
+    font-weight: bold;
+    text-align: left;
+}
+.li-conteudo{
+    margin-top: 0.7vh;
+}
+.li-conteudo::before{
+    content: "📗";
+}
