@@ -84,6 +84,8 @@ header{
 }
 .h2-conteudo{
     text-align: center;
+    width: 13vh;
+    
 }
 .ulconteudo{
     display: inline;
@@ -91,10 +93,16 @@ header{
 .img-conteudo{
     width: 24vw;
 }
+.img-h2{
+    width:13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .ulconteudo{
-   margin-left: 10px;
-    font-size:15px;
-    font-weight: bold;
+    margin-left: 2vw;
+    font-size:14px;
+    font-weight:600;
     text-align: left;
 }
 .li-conteudo{
@@ -102,4 +110,7 @@ header{
 }
 .li-conteudo::before{
     content: "📗";
+}
+.li-conteudo a{
+    color: #00288c;
 }
