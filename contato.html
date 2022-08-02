@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <button><img src="assets/Menu.svg" alt="Icone Menu" class="icone-menu"></button>
+        <img src="assets/Logo.svg" alt="Logo ReciclaBus">
+        <button><img src="assets/Notificações.svg" alt="Icone"></button>
+    </header>
+    <section>
+        <nav class="menu-lateral">
+            <img src="assets/X.svg" alt="" class="Sair-menu">
+             <img src="assets/Logo.svg" alt="" class="Logo-nav">
+
+             <div class="menuarrumacao-pai" >
+                 <div class="menu-arrumacao">
+                     <div class="About-us">
+                        <img src="assets/Pessoas.svg" alt="" class="img-menu img-pessoas">
+                        <a href="sobre.html" class="Menu-link M">Sobre nós</a>
+                                     </div>
+                                     <div class="Our-idea">
+                        <img src="assets/Ideia.svg" alt="" class="img-menu img-ideia">
+                        <a href="index.html" class="Menu-link">Nossa ideia</a>
+                                     </div>
+                                     <div class="Contact-us">
+                        <img src="assets/Contato.svg" alt="" class="img-menu img-contato">
+                        <a href="Contato.html" class="Menu-link">Fale conosco</a>
+                                     </div>
+                     <div class="Nearest-point">
+                        <img src="assets/Localizacao.svg" alt="" class="img-menu img-localizacao">
+                        <a href="#" class="Menu-link" >Como Funciona?</a>
+                    </div>
+                 </div>
+             </menuarrumacao-pai>
+    </section>
+    <main>
+        <div class="form">
+            <H1>Nós mandem uma mensagem!</H1>
+            <h2>campos obrigatorios com *</h2>
+            <form action="">
+                <label for="Nome" >
+                    Nome*
+                    <input type="text" id="Nome" placeholder="Seu nome" required>
+                </label>
+                <label for="Email" >
+                    Email*
+                    <input type="email" id="Email" placeholder="SeuEmail@gmail.com" required>
+                </label>
+                <label for="Telefone" >
+                    Telefone
+                    <input type="tel" id="Telefone" placeholder="(XX) XXXX-XXXX">
+                </label>
+                <label for="Cidade" >
+                    Cidade
+                    <input type="text" id="Cidade" placeholder="Ex:Recife">
+                </label>
+                <label for="Assunto">
+                    Assunto
+                    <select name="" id="Assunto">
+                        <option value="">Propostas</option>
+                        <option value="">Bugs na plataforma</option>
+                        <option value="">Ideias Novas</option>
+                        <option value="">Outros</option>
+                    </select>
+                </label>
+                <label for="Mensagem" >
+                    Mensagem*
+                    <input type="text" id="mensagem" placeholder="Ex:Gostaria de contratar seus serviços." class="input-mensagem" required>
+                </label>
+                <input type="Submit" class="enviar">
+            </form>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
