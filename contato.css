@@ -1,9 +1,12 @@
+*{
+    font-family: 'Kanit', sans-serif;
+}
+
 body{
     margin: 0;
     height: 100vh;
     width: 100vw;
     background:url(assets/Frame\ 1.svg);
-    font-family: 'Kanit', sans-serif;
     overflow-x: hidden;
 }
 .logo{
@@ -111,8 +114,9 @@ label{
 }
 .input-mensagem{
     text-align: left;
-    height: 30vw;
-    max-width: 61vw;
+    height: 20vw;
+    width: 61vw;
+    border-radius: 5px;
 }
 .enviar{
     margin-top: 10px;

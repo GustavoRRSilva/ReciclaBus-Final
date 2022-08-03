@@ -21,3 +21,6 @@ li,ul{
 input,select{
     border: none;
 }
+textarea{
+    display: block;
+}
