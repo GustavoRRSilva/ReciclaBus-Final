@@ -1,0 +1,19 @@
+*{
+    color: #FFFFFF;
+}
+main{
+    margin-top: 3vh;
+}
+h2{
+    width: 80vw;
+    font-size: 1.3rem;
+}
+.como-funciona,.fase-um,.fase-dois,.fase-tres,.fase-quatro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vh;
+}
+.Img-Mapa{
+    width: 50%;
+}
