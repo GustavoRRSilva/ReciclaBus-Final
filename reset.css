@@ -1,6 +1,8 @@
 button{
     background-color: unset;
     border: none;
+    margin: 0;
+    padding: 0;
 }
 a{
     color: white;
