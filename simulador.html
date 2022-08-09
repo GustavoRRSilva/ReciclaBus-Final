@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="simulador.css">
+    <link rel="stylesheet" href="menu-lateral.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Simulador</title>
+</head>
+<body>
+    <header>
+        <button><img src="assets/Menu.svg" alt="Icone Menu" class="icone-menu"></button>
+        <img src="assets/Logo.svg" alt="Logo ReciclaBus">
+        <button><img src="assets/Notificações.svg" alt="Icone"></button>
+    </header>
+    <section>
+        <nav class="menu-lateral">
+            <img src="assets/X.svg" alt="" class="Sair-menu">
+             <img src="assets/Logo.svg" alt="" class="Logo-nav">
+
+             <div class="menuarrumacao-pai" >
+                 <div class="menu-arrumacao">
+                     <div class="Sobre-Nos">
+                        <img src="assets/Pessoas.svg" alt="" class="img-menu img-pessoas">
+                        <a href="sobre.html" class="Menu-link M">Sobre nós</a>
+                                     </div>
+                                     <div class="Nossa-ideia">
+                        <img src="assets/Ideia.svg" alt="" class="img-menu img-ideia">
+                        <a href="index.html" class="Menu-link">Nossa ideia</a>
+                                     </div>
+                                     <div class="Contato">
+                        <img src="assets/Contato.svg" alt="" class="img-menu img-contato">
+                        <a href="Contato.html" class="Menu-link">Fale conosco</a>
+                                     </div>
+                                     <div class="Como-Funciona">
+                                        <img src="assets/Interrogacao.svg" alt="" class="img-menu img-interrogacao">
+                                        <a href="como-funciona.html" class="Menu-link" >Como Funciona</a>
+                                    </div>
+                                    <div class="Simulador">
+                                        <img src="assets/Calculadora.svg" alt="" class="img-menu img-simulador">
+                                        <a href="#" class="Simulador-link" >Simulador</a>
+                                    </div>
+                 </div>
+                </div>
+    </section>
+    <main>
+        <div class="lixeira">
+            <div class="plastico">
+                <div class="img-h2">
+                    <img src="assets/Reciclavel.svg" alt="">
+                    <h2>Plastico</h2>
+                </div>
+                     <div class="botoes">
+                         <button class="btn-lixeira" data-controle="plastico">-</button>
+                         <p class="p-lixeira" data-quantidade>0</p>
+                         <button class="btn-lixeira" data-controle="plastico">+</button>
+                     </div>
+            </div>
+            <div class="metal">
+                <div class="img-h2">
+                    <img src="assets/Reciclavel.svg" alt="">
+                    <h2>Metal</h2>
+                </div>
+                     <div class="botoes">
+                         <button class="btn-lixeira" data-controle="metal">-</button>
+                         <p class="p-lixeira" data-quantidade>0</p>
+                         <button class="btn-lixeira" data-controle="metal">+</button>
+                     </div>
+            </div>
+            <div class="papel">
+                <div class="img-h2">
+                    <img src="assets/Reciclavel.svg" alt="">
+                    <h2>Papel</h2>
+                </div>
+                     <div class="botoes">
+                         <button class="btn-lixeira" data-controle="papel">-</button>
+                         <p class="p-lixeira" data-quantidade>0</p>
+                         <button class="btn-lixeira"data-controle="papel">+</button>
+                     </div>
+
+            </div>
+            <div class="vidro">
+                <div class="img-h2">
+                    <img src="assets/Reciclavel.svg" alt="">
+                    <h2>Vidro</h2>
+                </div>
+                     <div class="botoes">
+                         <button class="btn-lixeira" data-controle="vidro">-</button>
+                         <p class="p-lixeira" data-quantidade>0</p>
+                         <button class="btn-lixeira" data-controle="vidro">+</button>
+                     </div>
+            </div>
+            <div class="valor-total">
+                <p> Valor Total: R$
+                    <p data-valor>0</p>
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="tabela.js"></script>
+</body>
+</html>
