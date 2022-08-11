@@ -1,17 +1,32 @@
-
+*{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
 }
+
 .lixeira{
     width: 88vw;
     height: 56vh;
     display: flex;
-    background-color: rgba(161, 255, 197, 0.3);
-    ;
+   
     flex-direction: column;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    width: 32vw;
+    font-size: 2rem;
+}
+h3{
+    font-size: 0.7rem;
+    color: rgba(0,0,0,0.5);
 }
 .metal,.plastico,.papel,.vidro{
     display: flex;
@@ -21,6 +36,10 @@ main{
     align-items: center;
     justify-content:space-between;
     font-weight: bold;
+}
+.valor-material{
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.7);
 }
 .img-h2{
     display: flex;

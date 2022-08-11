@@ -1,15 +1,15 @@
 const botoes = document.querySelectorAll("[data-controle]");
 var valor = document.querySelector("[data-valor]")
 const materiais ={
-    "plastico":16,
-    "metal" : 2,
-    "papel": 1,
-    "vidro" : 16
+    "plastico":0.032,
+    "metal" : 0.52,
+    "papel": 0.015,
+    "vidro" : 0.01
 }
 botoes.forEach((elemento)=>{
     elemento.addEventListener("click",(evento)=>{
+        valorTotal(evento.target.dataset.controle,elemento.textContent,evento.target.parentNode)
         manipulaDados(elemento.textContent,elemento.parentNode);
-        valorTotal(evento.target.dataset.controle,elemento.textContent)
     })
 })
 function manipulaDados(texto,parente){
@@ -23,13 +23,16 @@ else{
     quantidade.textContent = parseInt(quantidade.textContent)+100;
 }
 }
-function valorTotal(peca,operacao)
+function valorTotal(material,operacao,quantidade)
 {
-    console.log(valor)
-    if(operacao==="-"&&parseInt(valor.textContent)>0){
-        valor.textContent= parseInt(valor.textContent)-materiais[peca]
+    const quantidades = quantidade.querySelector("[data-quantidade]")
+    console.log(quantidades.textContent)
+    if(operacao==="-"&&(valor.textContent)>0&&quantidades.textContent>0){
+        valor.textContent= parseFloat(valor.textContent)-materiais[material];
+        valor.textContent= parseFloat(valor.textContent).toFixed(3);
     }
     else if(operacao==="+"){
-        valor.textContent= (parseInt(valor.textContent)+materiais[peca])
+        valor.textContent= parseFloat(valor.textContent)+(materiais[material]);
+        valor.textContent= parseFloat(valor.textContent).toFixed(3);
     }
 }
