@@ -49,3 +49,25 @@ label{
     margin-top: 10px;
     color: #A1FFC5;
 }
+@media screen and (min-width:1024px){
+    .form{
+        width: 70vw;
+        margin-top: 20vh;
+    }
+    input,select{
+        width: 40vw;
+        height: 3vw;
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
+    label{
+        font-size: 1.2rem;
+    }
+    .input-mensagem{
+        height: 15vw;
+        width: 40vw;
+    }
+    h1,h2{
+        font-size: 2rem;
+    }
+}

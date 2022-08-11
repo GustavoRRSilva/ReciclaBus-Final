@@ -37,3 +37,35 @@ h2{
     display: flex;
     justify-content: space-around;
 }
+@media screen and (min-width:1024px) {
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .Img-Mapa{
+        width: 40vh;
+    }
+    .img-fase-dois,.img-fase-tres{
+        width: 59vh;
+    
+    }
+    .Lixeira-1{
+        width: 20vw;
+    }
+    .boneco-1{
+        width: 7vw;
+    }
+    .Boneco-menor{
+        width: 10vh;
+    }
+    .transporte{
+        width: 32vh;
+    }
+    .img-fase-quatro-onibus,.img-fase-quatro-metro{
+        width: 56vh;
+    }
+
+}

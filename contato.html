@@ -12,9 +12,21 @@
 </head>
 <body>
     <header>
-        <button><img src="assets/Menu.svg" alt="Icone Menu" class="icone-menu"></button>
-        <img src="assets/Logo.svg" alt="Logo ReciclaBus">
-        <button><img src="assets/Notificações.svg" alt="Icone"></button>
+        <div class="header-mobile">
+            <button><img src="assets/Menu.svg" alt="Icone Menu" class="icone-menu"></button>
+            <img src="assets/Logo.svg" alt="Logo ReciclaBus">
+            <button><img src="assets/Notificações.svg" alt="Icone"></button>
+        </div>
+        <div class="header-desktop">
+            <ul>
+                <li><img src="assets/Logo.svg" alt=""></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="index.html">Nossa ideia</a></li>
+                <li><a href="contato.html">Fale conosco</a></li>
+                <li><a href="como-funciona.html">Como Funciona</a></li>
+                <li><a href="simulador.html">Simulador</a></li>
+            </ul>
+        </div>
     </header>
     <section>
         <nav class="menu-lateral">
@@ -80,7 +92,7 @@
                     Mensagem*
                     <textarea name="" id="mensagem" cols="30" rows="10" placeholder="Ex:Gostaria de contratar seus serviços." class="input-mensagem"></textarea>
                 </label>
-                <input type="Submit" class="enviar">
+                <input type="Submit" class="enviar" value="Enviar ">
             </form>
         </div>
     </main>

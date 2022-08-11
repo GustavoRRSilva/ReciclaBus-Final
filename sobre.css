@@ -6,7 +6,6 @@
 }
 .Pessoas{
     display: flex;
-    
     color: #FFFFFF;
 }
 .h2-conteudo{
@@ -43,4 +42,33 @@
 }
 .li-conteudo a{
     color: #00288c;
+}
+@media screen and (min-width:1024px) {
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteudo{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        width: 90vw;
+        padding-bottom: 20px;
+    }
+    .Pessoas{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-conteudo{
+        width: 8vw;
+    }
+    .img-h2{
+        flex-direction: column;
+        width:34vh;
+    }
+    .ulconteudo{
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }

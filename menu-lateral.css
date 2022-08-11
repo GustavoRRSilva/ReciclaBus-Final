@@ -6,13 +6,16 @@ body{
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background:url(assets/Frame\ 1.svg);
+    background:url(assets/background-mobile.svg);
     overflow-x: hidden;
+}
+header{
+    height: 15vw;
 }
 .logo{
     width: 100%;
 }
-header{
+.header-mobile{
     margin: 0;
     height: 13vw;
     display: flex;
@@ -81,4 +84,70 @@ header{
 }
 .Simulador a{
     margin-left: 0.3vh;
+}
+.header-desktop{
+    display: none;
+}
+strong{
+    font-weight: bold;
+}
+@media screen and (min-width:1024px){
+    body{
+        background: url(assets/background-desktop.svg);
+    }
+    .header-mobile{
+        display: none;
+    }
+    .header-desktop{
+        display: block;
+    }
+    header{
+        height: 15vh;
+    }
+    .header-desktop ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 2rem;
+        align-items:center;
+    }.header-desktop li{
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+    }
+    .header-desktop a{
+        transition: 0.5s;
+    }
+    .header-desktop a:hover{
+        color: #6DD196;
+        transition: 0.5s;
+    }
+    .header-desktop img{
+        width: 10vw;
+    }
+    .header-desktop li{
+        height: 10vh;
+    }
+    .parte1-main,.parte2-main{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .parte1-main img{
+        width: 14vw;
+    }
+    .parte1-main h2{
+        width: 40vw;
+        font-size: 3rem;
+        text-align: left;
+    }
+    strong{
+        color: #A1FFC5;
+        font-weight: bold;
+    }
+    .parte2-main{
+        display: none;
+    }
 }

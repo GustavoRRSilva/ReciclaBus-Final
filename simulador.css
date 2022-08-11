@@ -7,6 +7,7 @@ main{
     justify-content: center;
     align-items: center;
     height: 80vh;
+    flex-direction: column;
 }
 
 .lixeira{
@@ -77,8 +78,35 @@ h3{
 .valor-total{
     height: 3vh;
     text-align: center;
-
+    font-weight: bold;
 }
 .valor-total p{
     display: inline;
+}
+@media screen and (min-width:1024px) {
+
+   main{
+    height: 85vh;
+   }
+   .lixeira{
+    margin-top: 20px;
+   }
+    .plastico{
+        border-radius: 10px 10px 0px ;
+    }
+    .vidro{
+        border-radius: 0px 0px 10px 10px;
+    }
+    .lixeira,.metal,.plastico,.papel,.vidro{
+        width: 50vw;
+    }
+    h2{
+        width: 8vw;
+    }
+    .botoes{
+        width: 7vw;
+    }
+    .botoes button{
+        width: 1.8vw;
+    }
 }
