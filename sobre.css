@@ -3,34 +3,34 @@
     flex-direction: column;
     row-gap: 7vw;
     margin-top: 4vh;
+   
 }
 .Pessoas{
     display: flex;
     color: #FFFFFF;
+   
 }
 .h2-conteudo{
     text-align: center;
-    width: 13vh;
+    width: 18vh;
     
-}
-.ulconteudo{
-    display: inline;
 }
 .img-conteudo{
     width: 24vw;
 }
 .h2-conteudo{
-    font-size: 2.5vh;
+    font-size: 1rem;
 }
 .img-h2{
     width:13vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .ulconteudo{
     margin-left: 2vw;
-    font-size:14px;
+    font-size:0.8rem;
     font-weight:600;
     text-align: left;
 }
@@ -53,7 +53,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 100px;
-        width: 90vw;
+        width: 100vw;
         padding-bottom: 20px;
     }
     .Pessoas{
@@ -61,14 +61,21 @@
         flex-direction: column;
     }
     .img-conteudo{
-        width: 8vw;
+        width: 15vw;
     }
     .img-h2{
         flex-direction: column;
         width:34vh;
     }
+    .h2-conteudo{
+        font-size: 2rem;
+    }
     .ulconteudo{
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+  .conteudo a:hover{
+        text-decoration: underline;
     }
 }

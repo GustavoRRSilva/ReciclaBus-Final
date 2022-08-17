@@ -18,14 +18,16 @@
             <button><img src="assets/Notificações.svg" alt="Icone"></button>
         </div>
         <div class="header-desktop">
-            <ul>
-                <li><img src="assets/Logo.svg" alt=""></li>
-                <li><a href="sobre.html">Sobre nós</a></li>
-                <li><a href="index.html">Nossa ideia</a></li>
-                <li><a href="contato.html">Fale conosco</a></li>
-                <li><a href="como-funciona.html">Como Funciona</a></li>
-                <li><a href="simulador.html">Simulador</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><img src="assets/Logo.svg" alt=""></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="index.html">Nossa ideia</a></li>
+                    <li><a href="contato.html">Fale conosco</a></li>
+                    <li><a href="como-funciona.html">Como Funciona</a></li>
+                    <li><a href="simulador.html">Simulador</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <section>
@@ -62,26 +64,28 @@
         <div class="form">
             <H1>Nós mandem uma mensagem!</H1>
             <h2>campos obrigatorios com *</h2>
-            <form action="">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="b1c454c4-4181-4ade-9515-5c1e427d928f">
+                <input type="hidden" name="redirectTo" value="">
                 <label for="Nome" >
                     Nome*
-                    <input type="text" id="Nome" placeholder="Seu nome" required>
+                    <input type="text" id="Nome" placeholder="Seu nome" required name="name">
                 </label>
                 <label for="Email" >
                     Email*
-                    <input type="email" id="Email" placeholder="SeuEmail@gmail.com" required>
+                    <input type="email" id="Email" placeholder="SeuEmail@gmail.com" required name="email">
                 </label>
                 <label for="Telefone" >
                     Telefone
-                    <input type="tel" id="Telefone" placeholder="(XX) XXXX-XXXX">
+                    <input type="tel" id="Telefone" placeholder="(XX) XXXX-XXXX" name="phone">
                 </label>
                 <label for="Cidade" >
                     Cidade
-                    <input type="text" id="Cidade" placeholder="Ex:Recife">
+                    <input type="text" id="Cidade" placeholder="Ex:Recife" name="message">
                 </label>
                 <label for="Assunto">
                     Assunto
-                    <select name="" id="Assunto">
+                    <select name="subject" id="Assunto">
                         <option value="">Propostas</option>
                         <option value="">Bugs na plataforma</option>
                         <option value="">Ideias Novas</option>
@@ -90,7 +94,7 @@
                 </label>
                 <label for="Mensagem" >
                     Mensagem*
-                    <textarea name="" id="mensagem" cols="30" rows="10" placeholder="Ex:Gostaria de contratar seus serviços." class="input-mensagem"></textarea>
+                    <textarea name="message" id="mensagem" cols="30" rows="10" placeholder="Ex:Gostaria de contratar seus serviços." class="input-mensagem"></textarea>
                 </label>
                 <input type="Submit" class="enviar" value="Enviar ">
             </form>
