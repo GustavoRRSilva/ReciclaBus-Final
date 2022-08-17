@@ -1,9 +1,11 @@
+main{
+    padding-bottom: 20px;
+}
 .conteudo{
     display: flex;
     flex-direction: column;
     row-gap: 7vw;
     margin-top: 4vh;
-   
 }
 .Pessoas{
     display: flex;
@@ -42,6 +44,7 @@
 }
 .li-conteudo a{
     color: #00288c;
+    text-decoration: underline;
 }
 
 @media screen and (min-width:700px)  {
@@ -98,8 +101,5 @@
     }
     .Pessoas{
         margin-left: 0px;
-    }
-  .conteudo a:hover{
-        text-decoration: underline;
     }
 }
