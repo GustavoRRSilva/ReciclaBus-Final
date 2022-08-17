@@ -49,6 +49,12 @@ label{
     margin-top: 10px;
     color: #A1FFC5;
 }
+.confirma-envio{
+    display: none;
+}
+.confirma-envio-sucesso{
+display: block;
+}
 @media screen and (min-width:700px){
     .form{
         width: 90vw;

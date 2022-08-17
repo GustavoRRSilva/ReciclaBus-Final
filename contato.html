@@ -47,7 +47,7 @@
                                      </div>
                                      <div class="Contato">
                         <img src="assets/Contato.svg" alt="" class="img-menu img-contato">
-                        <a href="Contato.html" class="Menu-link">Fale conosco</a>
+                        <a href="contato.html" class="Menu-link">Fale conosco</a>
                                      </div>
                                      <div class="Como-Funciona">
                                         <img src="assets/Interrogacao.svg" alt="" class="img-menu img-interrogacao">
@@ -66,7 +66,7 @@
             <h2>campos obrigatorios com *</h2>
             <form action="https://api.staticforms.xyz/submit" method="post">
                 <input type="hidden" name="accessKey" value="b1c454c4-4181-4ade-9515-5c1e427d928f">
-                <input type="hidden" name="redirectTo" value="">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/contato.html">
                 <label for="Nome" >
                     Nome*
                     <input type="text" id="Nome" placeholder="Seu nome" required name="name">
@@ -96,7 +96,8 @@
                     Mensagem*
                     <textarea name="message" id="mensagem" cols="30" rows="10" placeholder="Ex:Gostaria de contratar seus serviços." class="input-mensagem"></textarea>
                 </label>
-                <input type="Submit" class="enviar" value="Enviar ">
+                <label for="" class="confirma-envio">Enviado com sucesso!</label>
+                <input type="Submit" class="enviar" value="Enviar" id="enviar">
             </form>
         </div>
     </main>

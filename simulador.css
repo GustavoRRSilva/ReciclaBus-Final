@@ -110,3 +110,14 @@ h3{
         width: 1.8vw;
     }
 }
+@media screen and (max-width:384px) {
+    h2{
+        font-size: 1.5rem;
+    }
+    .botoes{
+        margin-left: 20px;
+    }
+    .valor-material{
+        width: 30vw;
+    }
+}
