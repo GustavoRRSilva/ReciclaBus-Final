@@ -43,6 +43,22 @@
 .li-conteudo a{
     color: #00288c;
 }
+
+@media screen and (min-width:700px)  {
+    .li-conteudo{
+        font-size: 1.5rem;
+
+    }
+    .ulconteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 100px;
+    }
+    .Pessoas{
+        margin-left: 100px;
+    }
+}
 @media screen and (min-width:1024px) {
     main{
         display: flex;
@@ -52,13 +68,15 @@
     .conteudo{
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 100px;
-        width: 100vw;
+        column-gap: 50px;
         padding-bottom: 20px;
+        align-items: center;
+        justify-content: center;
     }
     .Pessoas{
         display: flex;
         flex-direction: column;
+        align-items:center
     }
     .img-conteudo{
         width: 15vw;
@@ -70,10 +88,16 @@
     .h2-conteudo{
         font-size: 2rem;
     }
+    .li-conteudo{
+        font-size: 1rem;
+    }
     .ulconteudo{
-        margin-left: 0;
+        margin-left: 0px;
         margin-top: 10px;
         font-size: 1rem;
+    }
+    .Pessoas{
+        margin-left: 0px;
     }
   .conteudo a:hover{
         text-decoration: underline;
