@@ -10,7 +10,7 @@ main{
 .Pessoas{
     display: flex;
     color: #FFFFFF;
-   
+   flex-wrap: wrap;
 }
 .h2-conteudo{
     text-align: center;
@@ -47,6 +47,8 @@ main{
     text-decoration: underline;
 }
 
+
+
 @media screen and (min-width:700px)  {
     .li-conteudo{
         font-size: 1.5rem;
@@ -79,7 +81,8 @@ main{
     .Pessoas{
         display: flex;
         flex-direction: column;
-        align-items:center
+        align-items:center;
+        padding-right: 20px;
     }
     .img-conteudo{
         width: 15vw;

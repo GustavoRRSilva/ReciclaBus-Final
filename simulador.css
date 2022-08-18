@@ -22,7 +22,6 @@ h1{
     text-align: center;
 }
 h2{
-    width: 32vw;
     font-size: 2rem;
 }
 h3{
@@ -40,6 +39,7 @@ h3{
 }
 .valor-material{
     font-size: 0.8rem;
+    text-align: center;
     color: rgba(0,0,0,0.7);
 }
 .img-h2{
@@ -76,7 +76,6 @@ h3{
 
 }
 .valor-total{
-    height: 3vh;
     text-align: center;
     font-weight: bold;
 }
@@ -99,9 +98,6 @@ h3{
     }
     .lixeira,.metal,.plastico,.papel,.vidro{
         width: 50vw;
-    }
-    h2{
-        width: 8vw;
     }
     .botoes{
         width: 7vw;
