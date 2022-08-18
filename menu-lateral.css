@@ -27,7 +27,6 @@ header{
     position: absolute;
     transition: 1s;
     width: 100vw;
-    height: 35vh;
     background-color: #6DD196;
     border-radius: 10px;
     transition: 0.50s;
@@ -38,9 +37,9 @@ header{
 }
 .menu-arrumacao{
     width: 200px;
-    height: 174.6px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 .menuarrumacao-pai{
     width: 100vw;
