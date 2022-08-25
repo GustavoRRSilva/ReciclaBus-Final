@@ -6,12 +6,14 @@ const materiais ={
     "papel": 0.015,
     "vidro" : 0.01
 }
+
 botoes.forEach((elemento)=>{
     elemento.addEventListener("click",(evento)=>{
         valorTotal(evento.target.dataset.controle,elemento.textContent,evento.target.parentNode)
         manipulaDados(elemento.textContent,elemento.parentNode);
     })
 })
+
 function manipulaDados(texto,parente){
 var quantidade = parente.querySelector("[data-quantidade]")
 if(texto==="-"){
@@ -23,6 +25,7 @@ else{
     quantidade.textContent = parseInt(quantidade.textContent)+100;
 }
 }
+
 function valorTotal(material,operacao,quantidade)
 {
     const quantidades = quantidade.querySelector("[data-quantidade]")
